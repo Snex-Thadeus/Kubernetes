@@ -1,0 +1,15 @@
+# Comment here
+microservices:
+  - app: user-authentication # - is used when we have a list of microservices
+    port: 7000
+    version: 1.6
+    deployed: True # on/Off Yes/No
+  - app: shopping-cart
+    port: 7003
+    version: 1.7 # [1.8, 2.0, 4.3]
+    deployed: True
+
+
+microservice:
+  - user-authentication
+  - shopping-cart
